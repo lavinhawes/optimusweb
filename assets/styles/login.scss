@@ -1,0 +1,101 @@
+.bg-wrap{
+  .login-wrap{
+    min-height:calc(100vh - 48px);
+    padding-bottom: 20px;
+    background-color: rgba(0,0,0,0.4);
+    #okta-signin-container{
+      margin-left: 150px;
+      #okta-sign-in{
+        margin: 0;
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        font-family: Gotham Book !important;
+        .okta-sign-in-header{
+          padding: 30px 42px 0;
+          border: none;
+          .auth-org-logo{
+            max-width: inherit;
+            max-height: inherit;
+            width: 222px;
+          }
+        }
+        .auth-content{
+          .auth-content-inner{
+            .primary-auth-form{
+              .o-form-content{
+                .okta-form-title{
+                  font-size: 14px;
+                  color: #fff;
+                  font-weight: normal;
+                  margin-bottom: 40px;
+                }
+                .o-form-fieldset-container{
+                  width: 260px;
+                  margin: 0 auto;
+                  .o-form-fieldset{
+                    .o-form-input{
+                      .o-form-control{
+                        background: none;
+                        border: none;
+                        border-bottom: 1px solid #fff;
+                        border-radius: 0;
+                        input{
+                          color: #fff;
+                          font-size: 14px;
+                          font-family: Gotham Book !important;
+                        }
+                        .input-icon{
+                          background-repeat: no-repeat;
+                          margin-right: 10px;
+                          opacity: 1;
+                          left: 5px;
+                          &:before{
+                            content: none;
+                          }
+                        }
+                        .input-tooltip{
+                          display: none;
+                        }
+                        &.o-form-input-name-username{
+                          .input-icon{
+                            background-image: url('./../images/usernameicon.png');
+                          }
+                        }
+                        &.o-form-input-name-password{
+                          margin-top: 40px;
+                          .input-icon{
+                            background-image: url('./../images/passwordicon.png');
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                .o-form-input-name-remember{
+                  display: none;
+                }
+              }
+              .o-form-button-bar{
+                width: 260px;
+                margin: 30px auto 0;
+                input.button{
+                  background: none;
+                  background-color: $primary-color;
+                  color: $secondary-color;
+                  border-radius: 0;
+                  border-color: $primary-color;
+                  font-family: $gotham-bold !important;
+                  font-size: 14px;
+                }
+              }
+            }
+            .auth-footer{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

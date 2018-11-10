@@ -1,0 +1,17 @@
+.herc-link{
+  font-size: 18px;
+  font-family: $gotham-bold;
+  color: $link-color;
+  cursor: pointer;
+}
+.secondary-link{
+  color: $link-color;
+  cursor: pointer;
+}
+.modal-btn-link{
+  color: $modal-button-link-color;
+  &:hover{
+    text-decoration: none;
+    color: $modal-button-link-color;
+  }
+}

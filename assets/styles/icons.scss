@@ -1,0 +1,39 @@
+.delete-icon{
+  height: 25px;
+  width: 25px;
+  background: url('./../images/delete.png') no-repeat;
+}
+.contact-icon{
+  width: 45px;
+  height: 45px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  &.call-icon{
+    background-image: url('./../images/call.png');
+  }
+  &.email-icon{
+    background-image: url('./../images/email.png');
+  }
+}
+
+.notification-badge{
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background: $notification-badge-color;
+  color: $primary-color;
+  font-size: 11px;
+  position: relative;
+  left: 10px;
+  top: -8px;
+  &.header-badge{
+    background: #fff;
+    top: -30px;
+  }
+}
+.pdf-icon{
+  width: 24px;
+  height: 20px;
+  background: url('./../images/pdf.svg') no-repeat;
+  background-size: contain;
+}

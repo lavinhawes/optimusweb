@@ -1,0 +1,24 @@
+/*ngprime modal customization*/
+body .ui-widget.ui-dialog{
+  font-family: $gotham-book;
+  border: 1px solid #707070;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 6px;
+  font-size: 16px;
+  .ui-dialog-titlebar.ui-widget-header{
+    background-color: #fff;
+    border: none;
+    padding-bottom: 10px;
+    font-family: $gotham-bold;
+    .primary-modal-header{
+      color: $secondary-color;
+    }
+  }
+  .ui-dialog-content.ui-widget-content{
+    border: none;
+  }
+  .ui-dialog-footer.ui-widget-content{
+    border: none;
+  }
+}

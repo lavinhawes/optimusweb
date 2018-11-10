@@ -1,0 +1,35 @@
+.mat-tab-group{
+  font-family: $gotham-book;
+  .mat-tab-header{
+    border-bottom: none;
+    .mat-tab-label-container{
+      margin-bottom: 30px;
+      .mat-tab-list{
+        .mat-tab-labels{
+          border-radius: 6px !important;
+          height: 40px;
+          border: 1px solid $button-group-color;
+          .mat-tab-label{
+            padding: 8px 0;
+            height: auto;
+            .mat-tab-label-content{
+              font-size: 16px;
+              font-family: $gotham-book;
+              color: $button-group-color;
+            }
+            &.mat-tab-label-active{
+              background: $button-group-color;
+              opacity: 1;
+              .mat-tab-label-content{
+                color: #fff;
+              }
+            }
+          }
+        }
+        .mat-ink-bar{
+          display: none;
+        }
+      }
+    }
+  }
+}

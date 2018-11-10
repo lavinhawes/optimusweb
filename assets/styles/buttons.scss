@@ -1,0 +1,77 @@
+
+button.btn{
+  height: 46px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: $gotham-bold;
+  padding: 10px 40px;
+  &:focus{
+    box-shadow: none;
+  }
+  &.primary-btn{
+    background: $primary-color;
+    color: $secondary-color;
+  }
+  &.secondary-btn{
+    border: 1px solid $primary-color;
+    color: $primary-color;
+    background: #fff;
+  }
+  &.login-btn{
+    border-radius: 0;
+    height: 40px;
+  }
+  &.guidance-btn{
+    color: $button-group-color;
+    border: 1px solid $button-group-color;
+    height: 32px;
+    width: 82px;
+    background: #fff;
+    padding: 5px 10px;
+  }
+  &.w-200-btn{
+    min-width: 200px;
+  }
+  .btn-text{
+    vertical-align: super;
+  }
+}
+
+.mat-button-toggle-group{
+  font-family: $gotham-book;
+  border-radius: 6px !important;
+  font-size: 16px;
+  height: 40px;
+  border-color: $button-group-color;
+  .mat-button-toggle{
+    padding: 8px 0;
+    border-left-color: $button-group-color !important;
+    &.mat-button-toggle-checked{
+      background-color: $button-group-color;
+      .mat-button-toggle-label-content{
+        color: #fff;
+      }
+    }
+    .mat-button-toggle-button{
+      &:focus{
+        outline: none;
+      }
+    }
+    .mat-button-toggle-label-content{
+      line-height: normal;
+      color: rgba(0, 128, 255, 0.5);
+    }
+  }
+}
+
+
+// button.btn{
+//   border-radius: 0;
+//   font-family: $gotham-bold;
+//   font-size: 14px;
+//   
+//   &.primary-button{
+//     background: $primary-color;
+//     color: $secondary-color;
+//   }
+// }

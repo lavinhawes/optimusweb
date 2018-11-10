@@ -1,0 +1,44 @@
+.search-results{
+  .result-row{
+    cursor: pointer;
+    border: 1px solid $panel-border-color;
+    padding: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    .customer-number{
+      padding-right: 16px;
+      &:after{
+        content: '|';
+        position: relative;
+        left: 9px;
+      }
+    }
+  }
+  &.pending-manager-results{
+    .result-row{
+      border-color: $panel-border-color;
+      background: #FFEBF9;
+      .rep-name{
+        color: #C049A4;
+      }
+      .quote-status{
+        color: rgba(190, 66, 161, 0.5);
+      }
+    }
+  }
+  &.pending-customer-results{
+    .result-row{
+      border-color: $panel-border-color;
+      background: #E5FCFF;
+      .rep-name{
+        color: #1689FF;
+      }
+      .quote-status{
+        color: #70BBFF;
+      }
+    }
+  }
+}

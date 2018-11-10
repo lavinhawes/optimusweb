@@ -1,0 +1,56 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import 'fonts';
+@import 'variables';
+@import 'links';
+@import 'input';
+@import 'buttons';
+@import 'panels';
+@import 'login';
+@import 'modal';
+@import 'tabs';
+@import 'search-results';
+@import 'icons';
+@import 'utilities';
+
+
+html,
+body{
+   height:100%;
+}
+
+body{
+  margin:0;
+  padding:0;
+  font-family: $gotham-book;
+  font-size: $global-font-size;
+  color: $primary-color;
+}
+.main-wrap{
+  height: 100%;
+}
+.content-wrap{
+  background: #F9F9F9;
+  &.height-check{
+    height:calc(100% - 94px);
+  }
+}
+.bg-wrap{
+  min-height:calc(100vh - 48px);
+  background-image: url("../images/herc_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.page-content{
+  padding: 50px 0 20px;
+  min-height:calc(100vh - 94px);
+  width: 1024px;
+}
+.mat-drawer-backdrop.mat-drawer-shown{
+  background-color: transparent;
+}
+.chevron-right-icon{
+  height: 13px;
+  width: 10px;
+  background: url('./../images/items_arrow.svg') no-repeat;
+  margin-top: 5px;
+}

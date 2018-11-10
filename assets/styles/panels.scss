@@ -1,0 +1,49 @@
+.herc-panel{
+  border: 1px solid $panel-border-color;
+  padding: 15px 25px 20px;
+  border-radius: 6px;
+  margin-bottom: 24px;
+  background: #fff;
+  &:last-child{
+    margin-bottom: 0;
+  }
+  .panel-header{
+    font-family: $gotham-bold;
+    font-size: 18px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #707070;
+    color: $primary-color;
+  }
+  .panel-content{
+    padding-top: 20px;
+  }
+  .panel-footer{
+    border-top: 1px solid #707070;
+    padding: 15px 0;
+  }
+  &.disabled-panel{
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  &.secondary-herc-panel{
+    border: 1px solid $secondary-panel-border-color;
+    .panel-header{
+      border-bottom-color: #c7c7c7;
+      font-size: 16px;
+    }
+    .panel-footer{
+      border-top-color: #c7c7c7;
+    }
+  }
+}
+
+.option-card{
+  background: $primary-color;
+  border: 1px solid #707070;
+  padding: 15px;
+  border-radius: 15px;
+  color: #fff;
+  margin-bottom: 15px;
+  font-family: $gotham-bold;
+  opacity: 0.76;
+}
